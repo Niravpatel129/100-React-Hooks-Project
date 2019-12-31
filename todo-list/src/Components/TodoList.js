@@ -18,7 +18,8 @@ function TodoList() {
 
   const renderItems = () => {
     return items.map((item, index) => (
-      <div
+      <li
+        className="list-group-item"
         onClick={e => {
           handleRemoveItem(e.target.id);
         }}
@@ -27,22 +28,22 @@ function TodoList() {
       >
         <b> {index + 1}. </b>
         {item}
-      </div>
+      </li>
     ));
   };
 
   return (
     <div className="todolist">
-      <h1>
-        <u>Todo App</u>
-      </h1>
+      <h1 className="display-4">Todo App</h1>
       <input
+        className="form-control"
         onChange={e => {
           changeInput(e.target.value);
         }}
       />
       <br />
       <button
+        className="btn btn-primary btn-lg"
         onClick={() => {
           updateItems([...items, inputValue]);
         }}
@@ -50,7 +51,10 @@ function TodoList() {
         Add Item
       </button>
       <br />
-      <b>TodoList:</b> {renderItems()}
+      <ul className="list-group">
+        <li className="list-group-item active">To Do's</li>
+        {renderItems()}
+      </ul>
     </div>
   );
 }
