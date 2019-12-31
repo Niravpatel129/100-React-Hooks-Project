@@ -25,6 +25,7 @@ function TodoList() {
         key={index}
         id={index}
       >
+        <b> {index + 1}. </b>
         {item}
       </div>
     ));
