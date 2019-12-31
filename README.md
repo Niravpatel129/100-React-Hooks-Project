@@ -1,25 +1,8 @@
 
 In the series, I'm going to create 100 apps all using React-Hooks
+## App1 - Todo List
+![App Demo](/todo-list/demo/app1demo.gif)
 
-## Days
-<table>
-    <thead>
-        <tr>
-            <th>Day</th>
-            <th>Preview</th>
-            <th>Description</th>
-            <th>Demo Hosted At:</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><strong>001</strong></td>
-            <td><img src="todo-list/demo/app1.png"></img></td>
-            <td>TODO List</td>
-            <td align="center"><a href="/"> :arrow_right:</a></td>
-        </tr>
-    </tbody>
-</table>
 
 ## Instructions
 All of Jack Oliver's original designs and code are hosted on Codepen. For the purposes of this blog series, we have created this Github repository containing all the code for each daily component. 
