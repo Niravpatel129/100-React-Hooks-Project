@@ -3,6 +3,9 @@ In the series, I'm going to create 100 apps all using React-Hooks
 ## App1 - Todo List
 ![App Demo](/1-todo-list/demo/app1demo.gif)
 
+## App2 - Recipes Finder App
+![App Demo](/2-recipe-app/demo/app2demo.gif)
+
 
 ## Instructions
 All of Jack Oliver's original designs and code are hosted on Codepen. For the purposes of this blog series, we have created this Github repository containing all the code for each daily component. 
