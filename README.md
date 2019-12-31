@@ -14,7 +14,7 @@ In the series, I'm going to create 100 apps all using React-Hooks
     <tbody>
         <tr>
             <td><strong>001</strong></td>
-            <td><img src="todo-list/demo/app1.png"></img></td>
+            <td>![App Demo](todo-list/demo/app1demo.gif)</td>
             <td>TODO List</td>
             <td align="center"><a href="/"> :arrow_right:</a></td>
         </tr>
