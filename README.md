@@ -1,7 +1,7 @@
 
 In the series, I'm going to create 100 apps all using React-Hooks
 ## App1 - Todo List
-![App Demo](/1.todo-list/demo/app1demo.gif)
+![App Demo](/1-todo-list/demo/app1demo.gif)
 
 
 ## Instructions
