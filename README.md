@@ -34,7 +34,6 @@ We've used the [`create-react-app`](https://github.com/facebookincubator/create-
 ## Prerequisites
 You'll need to have `node` and `npm` installed on your machine to run the commands. Head over to the [node.js](https://nodejs.org/en/) website and download the neccessary files to get those installed. 
 
-## Authors
-This series is a joint effort between:
+## Author:
 
 * [Nirav Patel](https://github.com/Niravpatel129) 
