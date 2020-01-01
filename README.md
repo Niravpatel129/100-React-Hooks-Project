@@ -9,6 +9,9 @@ In the series, I'm going to create 100 apps all using React-Hooks
 ## App3 - List Animation
 ![App Demo](/3-list-animate/demo/app3demo.gif)
 
+## App4 - Async Registration Form
+![App Demo](/4-register-login-form/demo/app4demo.gif)
+
 ## Instructions
 All of Jack Oliver's original designs and code are hosted on Codepen. For the purposes of this blog series, we have created this Github repository containing all the code for each daily component. 
 
