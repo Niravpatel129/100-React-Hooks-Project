@@ -1,0 +1,12 @@
+.App {
+  margin-top: 50px;
+}
+
+.display-4 {
+  color: skyblue;
+  width: 100%;
+  display: flex;
+  text-shadow: 1px 1px black;
+
+  justify-content: center;
+}
