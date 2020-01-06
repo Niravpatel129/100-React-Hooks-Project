@@ -76,12 +76,13 @@ section {
 .results .result h3 {
   color: #fff;
   font-size: 20px;
-  font-weight: 600;
-  padding: 15px;
+  font-weight: 500;
+  padding: 10px;
   max-height: 60px;
   background: #445565;
   flex: 1 1 100%;
   transition: 0.4s ease-out;
+  overflow-y: hidden;
 }
 
 .results .result:hover h3 {
