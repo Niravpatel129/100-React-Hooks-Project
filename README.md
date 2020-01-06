@@ -18,7 +18,7 @@ In the series, I'm going to create 100 apps all using React-Hooks
 
 ## App5 - Accordion/ExpandableList Practice
 
-![App Demo](/5-expandable-list/demo/app5demo.gif)
+![App Demo](/5-expandable-list/demo/app5demoo.gif)
 
 ## App6 - Reading List App
 
