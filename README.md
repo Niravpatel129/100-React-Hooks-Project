@@ -16,9 +16,14 @@ In the series, I'm going to create 100 apps all using React-Hooks
 
 ![App Demo](/4-register-login-form/demo/app4demo.gif)
 
-## App4 - Accordion/ExpandableList Practice
+## App5 - Accordion/ExpandableList Practice
 
 ![App Demo](/5-expandable-list/demo/app5demo.gif)
+
+## App6 - Reading List App
+
+![App Demo](/6-reading-list/demo/app6demo.gif)
+
 
 ## Instructions
 
