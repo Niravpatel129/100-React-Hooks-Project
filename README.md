@@ -24,6 +24,10 @@ In the series, I'm going to create 100 apps all using React-Hooks
 
 ![App Demo](/6-reading-list/demo/app6demo.gif)
 
+## App7 - Movie Database
+
+![App Demo](/7-movie-app/demo/app7demo.gif)
+
 
 ## Instructions
 
