@@ -3,10 +3,9 @@
 }
 
 .display-4 {
-  color: skyblue;
+  color: black;
   width: 100%;
   display: flex;
-  text-shadow: 1px 1px black;
 
   justify-content: center;
 }
