@@ -34,7 +34,7 @@ function App() {
           </IconButton>
           <Typography
             variant="h6"
-            style={{ color: "white", flexGrow: 1 }}
+            style={{ color: "#a8a8a8", flexGrow: 1 }}
             className={classes.title}
           >
             News
