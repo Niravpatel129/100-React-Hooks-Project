@@ -28,6 +28,9 @@ In the series, I'm going to create 100 apps all using React-Hooks
 
 ![App Demo](/7-movie-app/demo/app7demo.gif)
 
+## App8 - Weather App
+
+![App Demo](/8-weather-app/demo/app8demo.gif)
 
 ## Instructions
 
