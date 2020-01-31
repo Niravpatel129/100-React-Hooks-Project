@@ -6,11 +6,24 @@ const removeTodo = index => {
 };
 
 const addTodo = item => {
-  console.log(addTodo);
   return {
     type: "ADD_TODO",
     payload: item
   };
 };
 
-export { removeTodo, addTodo };
+const moveUp = index => {
+  return {
+    type: "MOVE_UP",
+    payload: index
+  };
+};
+
+const moveDown = index => {
+  return {
+    type: "MOVE_DOWN",
+    payload: index
+  };
+};
+
+export default { removeTodo, addTodo, moveUp, moveDown };

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
-import { addTodo } from "../actions";
+import { toDoActions } from "../actions";
 
-function AddTodoButton() {
+function AddTodoButton({ submitAdd }) {
   const [input, updateInput] = useState("");
 
   const handleOnChange = e => {
@@ -11,12 +11,14 @@ function AddTodoButton() {
 
   const handleOnClick = () => {
     if (!input) return;
+    submitAdd(input);
+    updateInput("");
   };
 
   return (
     <div>
       <p>Enter New Todo</p>
-      <input value={input} onChange={handleOnChange}></input>
+      <input value={input} onChange={handleOnChange}></input>{" "}
       <button onClick={handleOnClick}>+</button>
     </div>
   );
@@ -27,7 +29,11 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = dispatch => {
-  return { addTodo: dispatch };
+  return {
+    submitAdd: item => {
+      dispatch(toDoActions.addTodo(item));
+    }
+  };
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(AddTodoButton);

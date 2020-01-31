@@ -1,27 +1,15 @@
 import React from "react";
-import { connect } from "react-redux";
 
 import AddTodoButton from "./AddTodoButton";
+import Item from "./Item";
 
-function TodoApp({ todos }) {
-  console.log(todos);
+function TodoApp() {
   return (
     <div>
       <h1>Todo List:</h1>
       <AddTodoButton />
-      {todos.map((todo, index) => (
-        <p key={index}>{todo.name}</p>
-      ))}
+      <Item items />
     </div>
   );
 }
-
-const mapStateToProps = state => {
-  return { todos: state.todoListReducer };
-};
-
-const mapDispatchToProps = () => {
-  return {};
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(TodoApp);
+export default TodoApp;

@@ -1,3 +1,3 @@
-import { addTodo, removeTodo } from "./todoListActions";
+import toDoActions from "./todoListActions";
 
-export { addTodo, removeTodo };
+export { toDoActions };
