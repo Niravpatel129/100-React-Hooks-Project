@@ -33,6 +33,7 @@ function Item({ todos, removeTodo, moveUp, moveDown }) {
       >
         {todos.map((todo, index) => (
           <div
+            className="list-group-item list-group-item-action"
             key={index}
             style={{
               display: "flex",

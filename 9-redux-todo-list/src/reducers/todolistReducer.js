@@ -10,16 +10,11 @@ const defaultTodos = [
 const todoListReducer = (state = defaultTodos, action) => {
   switch (action.type) {
     case "ADD_TODO":
-      let updatedAddTodos = [...state];
-      updatedAddTodos.push({
-        name: action.payload,
-        index: updatedAddTodos.length + 1
-      });
-      return updatedAddTodos;
+      return [...state, { name: action.payload, index: state.length + 1 }];
+
     case "REMOVE_TODO":
-      let updatedRemoveTodos = [...state];
-      updatedRemoveTodos.splice(action.payload, 1);
-      return updatedRemoveTodos;
+      return state.filter((todo, i) => i !== action.payload);
+
     case "MOVE_UP":
       if (action.payload === 0) return state;
       const updatedMoveUpTodos = [...state];
@@ -31,6 +26,7 @@ const todoListReducer = (state = defaultTodos, action) => {
       updatedMoveUpTodos[action.payload - 1] = currentItem;
 
       return updatedMoveUpTodos;
+
     case "MOVE_DOWN":
       if (action.payload === state.length - 1) return state;
 
