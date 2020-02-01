@@ -11,10 +11,6 @@ function TeamList({ Teams, getData }) {
     getData();
   }, [getData]);
 
-  useEffect(() => {
-    console.log(Teams);
-  }, [Teams]);
-
   return (
     <div className="TeamList">
       {Teams.map((i, index) => (
