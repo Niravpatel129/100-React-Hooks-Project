@@ -1,16 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { connect } from "react-redux";
+import { TeamsActions } from "../redux/actions";
+
 import Card from "./Card";
+
 import "./TeamList.css";
 
-function TeamList() {
+function TeamList({ Teams, getData }) {
+  useEffect(() => {
+    getData();
+  }, [getData]);
+
+  useEffect(() => {
+    console.log(Teams);
+  }, [Teams]);
+
   return (
     <div className="TeamList">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      {Teams.map((i, index) => (
+        <Card key={index} index={index} title={i.title} src={i.url} />
+      ))}
     </div>
   );
 }
 
-export default TeamList;
+const mapStateToProps = state => {
+  return { Teams: state.teamsReducer };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    getData: () => {
+      dispatch(TeamsActions.getData());
+    }
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(TeamList);

@@ -1,3 +1,3 @@
-import { TeamsActions } from "./TeamList";
+import TeamsActions from "./TeamList";
 
 export { TeamsActions };
