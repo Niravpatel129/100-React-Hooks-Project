@@ -1,5 +1,7 @@
 import React from "react";
 
+import { connect } from "react-redux";
+
 function Card() {
   return (
     <div className="card" style={{ width: "18rem" }}>
@@ -22,4 +24,8 @@ function Card() {
   );
 }
 
-export default Card;
+const mapStateToProps = state => {
+  return { Teams: state.teamsReducer };
+};
+
+export default connect(mapStateToProps)(Card);
