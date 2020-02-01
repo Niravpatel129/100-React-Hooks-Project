@@ -1,0 +1,7 @@
+.TeamList {
+  display: flex;
+  padding-top: 30px;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
