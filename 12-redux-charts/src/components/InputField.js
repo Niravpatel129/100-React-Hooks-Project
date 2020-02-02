@@ -8,22 +8,22 @@ function InputField() {
   const dispatch = useDispatch();
   const addDataAction = newObj => dispatch(addData(newObj));
 
-  const [fieldData, updateField] = useState("");
+  const [fieldInput, updateField] = useState("");
 
   const handleInputChange = e => {
     updateField(e.target.value);
   };
 
   const handleSubmit = () => {
-    if (!fieldData) return;
+    if (!fieldInput) return;
 
-    makeApiCall(fieldData);
+    makeApiCall(fieldInput);
   };
 
   const makeApiCall = query => {
     axios
       .get(
-        `https://api.indeed.com/ads/apisearch?publisher=4548195452860771&v=2&format=json&q=${query}`
+        `http://api.indeed.com/ads/apisearch?publisher=4548195452860771&v=2&format=json&q=${query}`
       )
       .then(res => {
         console.log(res.data.totalResults);
@@ -39,7 +39,7 @@ function InputField() {
 
   return (
     <div>
-      <input value={fieldData} onChange={handleInputChange}></input>
+      <input value={fieldInput} onChange={handleInputChange}></input>
       <button onClick={handleSubmit}>+</button>
     </div>
   );
