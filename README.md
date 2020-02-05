@@ -2,19 +2,19 @@ In the series, I'm going to create 100 apps all using React-Hooks
 
 ## App1 - Todo List
 
-![App Demo](/1-todo-list/demo/app1demo.gif)
+![App Demo](/01-todo-list/demo/app1demo.gif)
 
 ## App2 - Recipes Finder App
 
-![App Demo](/2-recipe-app/demo/app2demo.gif)
+![App Demo](/02-recipe-app/demo/app2demo.gif)
 
 ## App3 - List Animation
 
-![App Demo](/3-list-animate/demo/app3demo.gif)
+![App Demo](/03-list-animate/demo/app3demo.gif)
 
 ## App4 - Async Registration Form
 
-![App Demo](/4-register-login-form/demo/app4demo.gif)
+![App Demo](/04-register-login-form/demo/app4demo.gif)
 
 ## App5 - Accordion/ExpandableList Practice
 
@@ -22,15 +22,15 @@ In the series, I'm going to create 100 apps all using React-Hooks
 
 ## App6 - Reading List App
 
-![App Demo](/6-reading-list/demo/app6demo.gif)
+![App Demo](/06-reading-list/demo/app6demo.gif)
 
 ## App7 - Movie Database
 
-![App Demo](/7-movie-app/demo/app7demo.gif)
+![App Demo](/07-movie-app/demo/app7demo.gif)
 
 ## App8 - Weather App
 
-![App Demo](/8-weather-app/demo/app8demo.gif)
+![App Demo](/08-weather-app/demo/app8demo.gif)
 
 ## Instructions
 
