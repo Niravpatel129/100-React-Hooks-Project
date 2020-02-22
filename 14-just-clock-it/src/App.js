@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
 
-import clockList from "./components/clockList";
+import ClockList from "./components/ClockList";
 
 function App() {
   return (
     <div className="App">
-      <clockList />
+      <ClockList />
     </div>
   );
 }

@@ -1,4 +1,19 @@
 .App {
+  display: block;
   text-align: center;
   border: 1px solid gray;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 90px;
+  padding-bottom: 20px;
+}
+
+.Select {
+  font-size: 13px;
+}
+
+.TimeEntry {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
 }
