@@ -1,9 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import firebase from "../firebase";
+import Addtime from "./Addtime";
+
+const SORT_OPTIONS = {};
 
 function ClockList() {
+  const [times, setTimes] = useState([]);
+
+  useEffect(() => {
+    const unsub = firebase
+      .firestore()
+      .collection("times")
+      .onSnapshot(ss => {
+        let newTimes = ss.docs.map(data => {
+          return { id: data.id, ...data.data() };
+        });
+        setTimes(newTimes);
+      });
+
+    return () => {
+      unsub.unsubscribe();
+    };
+  }, []);
+
   return (
     <div>
+      <Addtime />
       <h3>Times List</h3>
       <div className="Select">
         Sort By:
@@ -16,7 +38,13 @@ function ClockList() {
         </select>
       </div>
       <div className="TimeEntry">
-        <code>Hello Darkness - 44seconds</code>
+        {times.map((data, i) => {
+          return (
+            <code key={i} style={{ display: "block" }}>
+              {data.title} - {data.time}seconds
+            </code>
+          );
+        })}
       </div>
     </div>
   );
