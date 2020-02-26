@@ -2,7 +2,7 @@ import React from "react";
 
 function Star({
   index,
-  handlMouseOver,
+  handlMouseEnter,
   hoveredRating,
   handleMouseLeave,
   handlemouse
@@ -11,7 +11,7 @@ function Star({
   return (
     <span
       onMouseDown={() => handlemouse(index)}
-      onMouseOver={() => handlMouseOver(index)}
+      onMouseEnter={() => handlMouseEnter(index)}
       onMouseLeave={handleMouseLeave}
       style={{ color: isSelected && "gold" }}
       className="fa fa-lg fa-star checked"

@@ -7,7 +7,7 @@ function App() {
   const [hoveredRating, setHoveredRating] = useState(-1);
   const [rating, setRating] = useState(-1);
 
-  const handlMouseOver = index => {
+  const handlMouseEnter = index => {
     setHoveredRating(index);
   };
 
@@ -29,7 +29,7 @@ function App() {
               key={index}
               index={index}
               hoveredRating={hoveredRating}
-              handlMouseOver={handlMouseOver}
+              handlMouseEnter={handlMouseEnter}
               handleMouseLeave={handleMouseLeave}
               handlemouse={setMouseRating}
             />
