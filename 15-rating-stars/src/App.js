@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./App.css";
 import Star from "./components/Star";
+import "./App.css";
 
 function App() {
   const [stars] = useState([1, 2, 3, 4, 5]);
