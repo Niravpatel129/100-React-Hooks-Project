@@ -27,11 +27,11 @@ function App() {
           return (
             <Star
               key={index}
-              hoveredRating={hoveredRating}
               index={index}
+              hoveredRating={hoveredRating}
               handlMouseOver={handlMouseOver}
               handleMouseLeave={handleMouseLeave}
-              setMouseRating={setMouseRating}
+              handlemouse={setMouseRating}
             />
           );
         })}

@@ -5,12 +5,12 @@ function Star({
   handlMouseOver,
   hoveredRating,
   handleMouseLeave,
-  setMouseRating
+  handlemouse
 }) {
   const isSelected = hoveredRating >= index;
   return (
     <span
-      onMouseDown={() => setMouseRating(index)}
+      onMouseDown={() => handlemouse(index)}
       onMouseOver={() => handlMouseOver(index)}
       onMouseLeave={handleMouseLeave}
       style={{ color: isSelected && "gold" }}
