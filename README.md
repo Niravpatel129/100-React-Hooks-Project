@@ -34,9 +34,7 @@ In the series, I'm going to create 100 apps all using React-Hooks
 
 ## Instructions
 
-All of Jack Oliver's original designs and code are hosted on Codepen. For the purposes of this blog series, we have created this Github repository containing all the code for each daily component.
-
-We've used the [`create-react-app`](https://github.com/facebookincubator/create-react-app) tool to set up our environment. To run the code `cd` into each individual folder and run the following commands:
+I've used the [`create-react-app`](https://github.com/facebookincubator/create-react-app) tool to set up our environment. To run the code `cd` into each individual folder and run the following commands:
 
 1. `npm install` will install all the libraries you'll need to get each Daily UI running.
 
